@@ -7,6 +7,6 @@ public class Main {
             new Thread(null, center::takeACallToWork, "Специалист 1").start();
             new Thread(null, center::takeACallToWork, "Специалист 2").start();
             new Thread(null, center::takeACallToWork, "Специалист 3").start();
-            }
         }
     }
+}

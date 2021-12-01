@@ -22,11 +22,9 @@ public class CallCenter {
     public void takeACallToWork() {
         String callMessage;
         try {
-            while (calls.isEmpty()) {
                 callMessage = calls.take();
                 Thread.sleep(WORKING_HOURS);
                 System.out.println(Thread.currentThread().getName() + " обработал: " + callMessage);
-            }
         } catch (InterruptedException e) {
             System.err.println(e.getMessage());
         }
